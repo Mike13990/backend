@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Automóviles</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Venta de Automóvil</h1>
+    </header>
+    <section>
+        <article>
+            <form action="guardar.php" method="POST">
+                <!-- Información del automóvil -->
+                <h2>Información del Automóvil</h2>
+                
+                <label>Marca del automóvil:</label><br>
+                <input type="text" name="marca" required><br><br>
+                
+                <label>Modelo:</label><br>
+                <input type="text" name="modelo" required><br><br>
+                
+                <label>Año de fabricación:</label><br>
+                <input type="number" name="anio" min="1900" max="2026" required><br><br>
+                
+                <label>Color:</label><br>
+                <input type="text" name="color" required><br><br>
+                
+                <label>Tipo de transmisión:</label><br>
+                <select name="transmision" required>
+                    <option value="Manual">Manual</option>
+                    <option value="Automática">Automática</option>
+                </select><br><br>
+                
+                <label>Precio del vehículo (Q):</label><br>
+                <input type="number" name="precio" step="0.01" required><br><br>
+
+                <!-- Información del comprador -->
+                <h2>Información del Comprador</h2>
+                
+                <label>Nombre completo:</label><br>
+                <input type="text" name="nombre" required><br><br>
+                
+                <label>Número de identificación o DPI:</label><br>
+                <input type="text" name="dpi" required><br><br>
+                
+                <label>Teléfono:</label><br>
+                <input type="text" name="telefono" required><br><br>
+                
+                <label>Correo electrónico:</label><br>
+                <input type="email" name="correo" required><br><br>
+                
+                <label>Dirección:</label><br>
+                <input type="text" name="direccion" required><br><br>
+                
+                <input type="submit" value="Guardar">
+            </form>
+        </article>
+    </section>
+</body>
+</html>

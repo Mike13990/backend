@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar datos</title>
+</head>
+<body>
+    <header>Envio de datos a travez de un formulario</header>
+    <section>
+        <article>
+            <h2>Registro de estudiantes</h2>
+            <form action="guardardatos.php" method="POST">
+                <label>Nombre:</label><br>
+                <input type="text" name="nombre" required><br><br>
+                <label>Apellido:</label><br>
+                <input type="text" name="ape" required><br><br>
+                <label>Edad:</label><br>
+                <input type="number" name="edad" min="14" max="80" required><br><br>
+                <label>Correo electronico:</label><br>
+                <input type="email" name="correo" required><br><br>
+                <label>Seleccione carrera</label><br>
+                <select name="carrera">
+                    <option>Ingenieria</option>
+                    <option>Administracion</option>
+                    <option>Diseño</option>
+                    <option>Arquitectura</option>
+                    <option>Auditoria</option>
+                    <option>Mecatronica</option>
+                </select><br><br>
+                <input type="submit" value="Guardar">
+            </form>
+        </article>
+    </section>
+    <footer>Realizado por MIKE Julio-2020 </footer>
+</body>
+</html>
